@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
 .quote-container{
     width: auto;
     height: auto;
@@ -15,6 +17,18 @@
     font-size: 3.5rem;
 }
 
+.change-font{
+    font-family: Graduatee;
+
+}
+
+.change-author-font{
+    font-family: Delius;
+}
+
+.regular-author-font{
+    font-family: Shadows Into Light Two, sans-serif;
+}
 /* when the text lenth is more , we want to shrink the text size*/
 .long-quote{
 
@@ -25,11 +39,11 @@
     font-size: 2.75rem;
 }
 
+
 .quote-author{
     text-align: end;
     margin-right: 25px;
     margin-bottom: 25px;
-    font-family: Shadows Into Light Two, sans-serif;
     font-weight: 600;
     font-size: 2rem;
     font-style: italic;
@@ -46,11 +60,9 @@ button{
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    font-family: Architects Daughter, sans-serif;
+    font-family: Zilla Slab, sans-serif;
     font-size: 1.2rem;
     height: 2.5rem;
-    background-color: #000;
-    color: rgb(236, 16, 16);
     outline: none;
     padding: 0.3rem 1.2rem;
     box-shadow: 0 0.3rem   rgba(121, 121, 121, 0.6);
@@ -64,14 +76,31 @@ button:active{
     transform: translate(0,0.3rem);
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
 }
-#twitter:hover{
-    color: #38a1f3;
+
+.new-quote{
+    background-color: #000;
+    color: #cc1212;
+}
+
+.new-quote:hover{
+    background-color: #cc1212;
+    color: #000;
+    font-weight: 700;
 }
 
 #twitter{
-    color: rgba(255, 255, 255, 0.8);
+    background-color: #1b95e0;
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
+
+#twitter:hover{
+    color: #38a1f3;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+
 
 /*Media query: tablet or smaller*/
 

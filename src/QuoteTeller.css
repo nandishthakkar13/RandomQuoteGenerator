@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.container{
+    height: 40vh;
+    width: 40vw;
+    background: url('./res/robot.gif');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    font-family: Itim, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #770000;
+    color: #cf9494;
+    border-radius: 10px;
+    box-shadow: 0 0.3rem   rgba(144, 144, 121, 0.7);
+
+}
+
+#button:hover{
+    filter: brightness(110%);
+    color: #770000;
+    background-color: #cf9494;
+}
+
+#button:active{
+    transform: translate(0,0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+}
+
+
+#button:disabled{
+    cursor: default;
+    filter: brightness(30%);
+}

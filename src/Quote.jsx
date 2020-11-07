@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Quote.css";
-
-
+import { usePromiseTracker } from 'react-promise-tracker';
+import Loader from 'react-promise-loader';
 
 class Quote extends Component {
   
@@ -11,6 +11,10 @@ class Quote extends Component {
 
   }
 
+  componentDidMount() {
+    this.props.getQuote();
+  }
+  
 
    
 
@@ -28,7 +32,9 @@ class Quote extends Component {
 
     return (
       <div>
-        <div className="loader" hidden></div>
+        {this.props.isLoading && <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'} background={'rgba(255,255,255,.5)'}/>}
+
+      {!this.props.isLoading && 
         <div className="quote-container" id="quote-container">
           <div
             className={`${
@@ -70,6 +76,7 @@ class Quote extends Component {
             </button>
           </div>
         </div>
+          }
       </div>
     );
   }
